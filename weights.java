@@ -1,3 +1,8 @@
+/*
+Program takes an input weight from the user and computes what combination of plates would create that weight, using the least plates possible. It is assumed that the bar is 45 pounds
+User input is also validated.
+*/
+
 import java.util.Scanner;
 
 class Main {
