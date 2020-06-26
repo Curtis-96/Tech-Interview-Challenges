@@ -1,3 +1,8 @@
+/*
+The program parces input from the "bandwidth.csv" and "bitrate.csv" files and uses these values to compute the network bandwidth utilization of an interface.
+The file "bandwidth.csv" is in the format "Server, InterfaceName, Bandwidth" (ex. "server1,eth0,20"). The file "netbitrate.csv" is in the format "Timestamp,Server,InterfaceName,NetBitRate" (ex. "2019-07-08 21:53:27,server1,eth1,100").
+*/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.BufferedReader;
@@ -9,7 +14,7 @@ import java.util.Iterator;
 class Main {
   public static void main(String[] args) throws Exception{
   File band = new File("bandwidth.csv");
-  File bit = new File("bitrate.csv");
+  File bit = new File("netbitrate.csv");
   Scanner in = new Scanner(band);
   Scanner in2 = new Scanner(bit);
   ArrayList <String> f1 = new ArrayList<String>();
